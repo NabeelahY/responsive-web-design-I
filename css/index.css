@@ -1,3 +1,147 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* CONTAINER (MOBILE FIRST)*/
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+}
 
+/* MENU */
+.nav-bar {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 0.5rem; 
+}
 
+div.logo {
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.nav-bar a {
+    font-size: 1rem;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: darkgray;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-bar a:nth-child(1) {
+    border-top: 1px solid #ccc;
+}
+/* BANNER */
+.banner {
+    margin: 0.5rem;
+    padding: 0.5rem; 
+    border-bottom: 2px solid #000;
+}
+.banner h1 {
+    padding: 4rem 0;
+    text-align: center;
+    font-size: 3rem;
+}
+.banner button {
+    margin: 1.5rem 0;
+    padding: 0.5rem;
+	background-color: #ffffff;
+	width: 15rem;
+	border: 1px solid #000;
+	font-size: 1.2rem;
+}
+.banner img {
+    display: none;
+}
+
+/* SERVICES SECTION */
+.main-content {
+    padding: 1.5rem 0;
+    margin: 1rem 0;
+    text-align: justify;
+}
+.top-section {
+    margin: 0.5rem;
+    padding: 0.5rem; 
+}
+.img img {
+    max-width : 95%;
+    margin: 0 0.5rem;
+}
+.bottom-section {
+    margin: 0.5rem;
+    padding: 0.5rem; 
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 2px solid #000;
+    margin: 0.5rem;
+    padding: 0.5rem; 
+}
+
+.contact {
+    padding: 1.5rem 0;
+    line-height: 2;
+}
+.copyright {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+/* MEDIA QUERIES FOR TABLET AND DESKTOP */
+@media(min-width: 750px) and (max-width: 1023px) {
+    .container{
+        max-width: 600px;
+    }
+    .nav-bar {
+        width: 100%;
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav-bar a, .nav-bar a:nth-child(1) {
+        border: none;
+        padding: 0.5rem;
+    }
+    .main-content {
+        display: flex;
+        justify-content: row;
+        text-align: left;
+    }
+
+}
+@media(min-width: 1024px){
+    .container{
+        max-width: 800px;
+    }
+    header {
+        display: flex;
+        padding: 1rem;
+        flex-direction: row-reverse;
+        align-items: baseline;
+    }
+    .nav-bar {
+        width: 100%;
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav-bar a, .nav-bar a:nth-child(1) {
+        border: none;
+        padding: 0.5rem;
+    }
+    .main-content {
+        display: flex;
+        justify-content: row;
+    }
+    .banner {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 2rem;
+    }
+    .banner img {
+        display: inline;
+    }
+}
