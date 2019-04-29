@@ -38,7 +38,7 @@ div.logo {
     border-bottom: 2px solid #000;
 }
 .banner h1 {
-    padding: 3rem 0;
+    padding: 4rem 0;
     text-align: center;
     font-size: 3rem;
 }
@@ -119,6 +119,7 @@ footer {
     header {
         display: flex;
         padding: 1rem;
+        flex-direction: row-reverse;
         align-items: baseline;
     }
     .nav-bar {
@@ -134,5 +135,13 @@ footer {
     .main-content {
         display: flex;
         justify-content: row;
+    }
+    .banner {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 2rem;
+    }
+    .banner img {
+        display: inline;
     }
 }
